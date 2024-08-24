@@ -9,11 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var viewModel: FlightViewModel = FlightViewModel()
+    var concurrentViewModel: ConcurrentAPIViewModel = ConcurrentAPIViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getProductDetailAfterProductList()
     }
 
-
+    func callAPi() {
+        viewModel.fetchRequest()
+    }
+    
+    func productAndAlbumList() {
+        concurrentViewModel.fetchConcurrentService()
+    }
+    
+    func getProductDetailAfterProductList() {
+        concurrentViewModel.apiAfterCompletionOfMultipleApi()
+    }
+    
 }
 

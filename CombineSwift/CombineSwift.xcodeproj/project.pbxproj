@@ -13,6 +13,10 @@
 		F4A51C0A2C7763570013DFFC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F4A51C092C7763570013DFFC /* Base */; };
 		F4A51C0C2C7763580013DFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A51C0B2C7763580013DFFC /* Assets.xcassets */; };
 		F4A51C0F2C7763580013DFFC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F4A51C0E2C7763580013DFFC /* Base */; };
+		F4A51C192C776B100013DFFC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A51C182C776B100013DFFC /* NetworkManager.swift */; };
+		F4A51C1B2C776CEF0013DFFC /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A51C1A2C776CEF0013DFFC /* NetworkHelpers.swift */; };
+		F4A51C1E2C777E5E0013DFFC /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A51C1D2C777E5E0013DFFC /* FlightViewModel.swift */; };
+		F4A51C212C7780250013DFFC /* FlightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A51C202C7780250013DFFC /* FlightList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F4A51C0B2C7763580013DFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A51C0E2C7763580013DFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A51C102C7763580013DFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A51C182C776B100013DFFC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F4A51C1A2C776CEF0013DFFC /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
+		F4A51C1D2C777E5E0013DFFC /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
+		F4A51C202C7780250013DFFC /* FlightList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				F4A51C022C7763570013DFFC /* AppDelegate.swift */,
 				F4A51C042C7763570013DFFC /* SceneDelegate.swift */,
+				F4A51C162C776AE80013DFFC /* Utility */,
 				F4A51C062C7763570013DFFC /* ViewController.swift */,
+				F4A51C1F2C77800C0013DFFC /* Model */,
+				F4A51C1C2C777B5E0013DFFC /* ViewModel */,
 				F4A51C082C7763570013DFFC /* Main.storyboard */,
 				F4A51C0B2C7763580013DFFC /* Assets.xcassets */,
 				F4A51C0D2C7763580013DFFC /* LaunchScreen.storyboard */,
 				F4A51C102C7763580013DFFC /* Info.plist */,
 			);
 			path = CombineSwift;
+			sourceTree = "<group>";
+		};
+		F4A51C162C776AE80013DFFC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F4A51C172C776AF90013DFFC /* NetworkManager */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F4A51C172C776AF90013DFFC /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F4A51C182C776B100013DFFC /* NetworkManager.swift */,
+				F4A51C1A2C776CEF0013DFFC /* NetworkHelpers.swift */,
+			);
+			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F4A51C1C2C777B5E0013DFFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4A51C1D2C777E5E0013DFFC /* FlightViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4A51C1F2C77800C0013DFFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4A51C202C7780250013DFFC /* FlightList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A51C192C776B100013DFFC /* NetworkManager.swift in Sources */,
+				F4A51C1E2C777E5E0013DFFC /* FlightViewModel.swift in Sources */,
 				F4A51C072C7763570013DFFC /* ViewController.swift in Sources */,
 				F4A51C032C7763570013DFFC /* AppDelegate.swift in Sources */,
+				F4A51C1B2C776CEF0013DFFC /* NetworkHelpers.swift in Sources */,
 				F4A51C052C7763570013DFFC /* SceneDelegate.swift in Sources */,
+				F4A51C212C7780250013DFFC /* FlightList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
